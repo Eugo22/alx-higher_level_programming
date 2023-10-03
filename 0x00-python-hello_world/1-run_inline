@@ -1,0 +1,4 @@
+#!/bin/bash
+pycode='print(f"Best School: {88+10}")'
+export pycode
+python -c "$pycode"
