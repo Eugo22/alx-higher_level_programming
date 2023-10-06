@@ -3,7 +3,7 @@ import sys
 
 if __name__ == "__main__":
 
-    num_args = lensys.argv) -1
+    num_args = len(sys.argv) -1
 
     """Print the number of and list of arguments."""
 
