@@ -5,14 +5,8 @@ if __name__ == "__main__":
 
     """Print the number of and list of arguments."""
 
-    count = len(sys.argv) - 1
-    if count == 0:
-        print("0 arguments.")
-
-    elif count == 1:
-        print("{} arguments:".format(count))
-    else:
-        print("{} arguments:".format(count))
-
+    start = 's' if num-args != 1 else ''
+    ending = '.' if num_args == 0 esle ':'
+    print("{} argument{}{}".format(num_args, start, ending))
     for i in range(count):
         print("{}: {}".format(i + 1, sys.argv[i + 1]))
