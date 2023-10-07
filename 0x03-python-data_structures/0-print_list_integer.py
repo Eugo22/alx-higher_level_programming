@@ -6,7 +6,4 @@ def print_list_integer(my_list=[]):
     # Iterate through each item in the list
     for num in my_list:
 
-        # Check if the item is an integer
-        if isinstance(num, int):
-
-            print("{}".format(num))
+        print("{}".format(num))
