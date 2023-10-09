@@ -2,12 +2,5 @@
 
 def no_c(my_string):
 
-    new_string = ""
-
-    for c in my_string:
-
-        if c.lower() != 'c':
-
-            new_string += c
-
-    return new_string
+    return ''.join([char for char in my_string if char.lower()
+                    not in ('c', 'C')])
