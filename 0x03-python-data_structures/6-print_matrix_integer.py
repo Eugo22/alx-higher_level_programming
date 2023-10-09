@@ -5,8 +5,8 @@ def print_matrix_integer(matrix=[[]]):
 
     for row in matrix:
 
-        for ele in row:
+        for elem in row:
 
-            print("{:d}".format(ele), end=' ' if row != row[-1] else "")
+            print("{:d}".format(elem), end=" " if row != row[-1] else "")
 
         print()
