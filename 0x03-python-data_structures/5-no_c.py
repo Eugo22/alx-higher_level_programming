@@ -4,10 +4,10 @@ def no_c(my_string):
 
     new_string = ""
 
-    for c in my_string:
+    for char in my_string:
 
-        if c.lower() != 'c':
+        if char.lower() != 'c':
 
-            new_string += c
+            new_string += char
 
     return new_string
