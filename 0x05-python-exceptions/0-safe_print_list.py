@@ -2,18 +2,17 @@
 
 def safe_print_list(my_list=[], x=0):
 
-    count = 0
+    try:
 
-    for i in range(x):
+        if x == 0:
+            return 0
 
-        try:
-            print(my_list[i], end=' ')
+        else:
 
-            count += 1
-        except IndexError:
+            print(my_list[0], end=' ')
 
-            break
+            return 1 + safe_print_list(my_list[1:], x-1)
 
-    print()
+    except IndexError:
 
-    return count
+        return 0
